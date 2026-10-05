@@ -1,12 +1,12 @@
 # LGM-OS — la parte de código abierto
 
-LGM-OS es software propietario (ver `LICENSE` en la raíz). Lo que hay en esta carpeta es SOLO lo
+LGM-OS es software propietario (<https://lgm-os.com>). Lo que hay en este repositorio es SOLO lo
 que las licencias libres de terceros obligan a dar: qué programas libres reparte LGM-OS ya
 compilados, de qué versión exacta, y cómo conseguir su código fuente completo. Con esto no se
 puede reconstruir LGM-OS: el panel, las licencias, el portal y LGM Connect no están aquí ni
 contienen código de licencia GPL.
 
-Esta carpeta es la que se publica como repositorio `lgm-os-opensource`.
+Se mantiene al día solo: cada vez que cambia lo que repartimos con licencia libre, cambia aquí.
 
 ## Qué se reparte con licencia libre
 
@@ -36,7 +36,7 @@ servidores de Debian: quien lo reparte es Debian, y su código está en <https:/
 Todo componente libre nuevo que LGM-OS reparta compilado (en la ISO, en el paquete de
 actualización o dentro de LGM Connect) se apunta en la tabla de arriba en la misma tanda, con su
 licencia y de dónde sale su código. Y en el panel, el servidor y LGM Connect no entra código ni
-bibliotecas GPL, AGPL o LGPL: el test `test_lo_privado_no_lleva_gpl.py` lo vigila.
+bibliotecas GPL, AGPL o LGPL: se comprueba en cada versión.
 
 ---
 
