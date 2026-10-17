@@ -6,3 +6,5 @@ Debian que lleva una ISO es el de los DVD de fuentes de su versión base (`obten
 | Construida | Debian base (netinst) | SHA-256 de la ISO de LGM-OS |
 |---|---|---|
 | 2026-10-07 | Debian GNU/Linux 12.15.0 "Bookworm" - Official amd64 NETINST with firmware 20260711-14:01 | `537b234960183f4fba5933d82e18096a1ffb19870dd564d1efed404ac0c60c98` |
+| 2026-10-12 | Debian GNU/Linux 12.15.0 "Bookworm" - Official amd64 NETINST with firmware 20260711-14:01 | `5cdd9cb5c32e7bcb9212f5c2ee6086fcdc32ce28adb2bbb2e8c1e4c85b5da7c0` |
+| 2026-10-17 | Debian GNU/Linux 12.15.0 "Bookworm" - Official amd64 NETINST with firmware 20260711-14:01 | `ddb805719b9d44ed93e7417f81e19460c21b1b18dcec079de1fe024147d5f69a` |

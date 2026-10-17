@@ -22,6 +22,13 @@ obra derivada de ningún programa GPL.
 Lo que el NAS instala después (aria2, qBittorrent, Samba, Docker…) lo baja cada equipo de los
 servidores de Debian: quien lo reparte es Debian, y su código está en <https://snapshot.debian.org>.
 
+La búsqueda inteligente de la Galería tampoco viaja en el paquete: el NAS que la activa baja sus
+bibliotecas de PyPI (ONNX Runtime, MIT; NumPy, BSD; FlatBuffers, Apache 2.0; Protocol Buffers,
+BSD; packaging, Apache 2.0 o BSD) y sus modelos de Hugging Face (CLIP ViT-B/32, MIT; el texto
+multilingüe de sentence-transformers, Apache 2.0; YuNet, MIT, y SFace, Apache 2.0, de OpenCV).
+Ninguno es copyleft; la lista exacta, con la versión y la huella de cada archivo, está en
+`backend/requirements-ia.lock` y `backend/app/core/datos/ia_modelos.tsv` del producto.
+
 ## Si alguien pide el código
 
 1. Mira en [`isos.md`](isos.md) en qué versión de Debian se basa la ISO por la que pregunta.
