@@ -22,8 +22,11 @@ Todo se usa **sin modificar**. A lo de Debian la ISO solo le añade archivos pro
 (las respuestas del instalador, el menú de arranque, el tema y la imagen de marca), que no son
 obra derivada de ningún programa GPL.
 
-Lo que el NAS instala después (aria2, qBittorrent, Samba, Docker…) lo baja cada equipo de los
+Lo que el NAS instala después (aria2, qBittorrent, Samba…) lo baja cada equipo de los
 servidores de Debian: quien lo reparte es Debian, y su código está en <https://snapshot.debian.org>.
+Docker (Docker CE, containerd y runc, Apache 2.0) lo baja cada equipo del repositorio oficial de
+Docker para Debian: quien lo reparte es Docker, y su código está en <https://github.com/moby/moby>,
+<https://github.com/containerd/containerd> y <https://github.com/opencontainers/runc>.
 
 La búsqueda inteligente de la Galería tampoco viaja en el paquete: el NAS que la activa baja sus
 bibliotecas de PyPI (ONNX Runtime, MIT; NumPy, BSD; FlatBuffers, Apache 2.0; Protocol Buffers,
