@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Baja el código fuente completo de una versión de Debian 12: sus DVD de fuentes, que llevan el
+# Baja el código fuente completo de una versión de Debian (12 o 13): sus DVD de fuentes, que llevan el
 # de todo lo que contiene la netinst en que se basa la ISO de LGM-OS (ver isos.md).
 #
-#   bash obtener-fuentes.sh 12.12.0 fuentes/
+#   bash obtener-fuentes.sh 13.7.0 fuentes/
 #
 # Son varios gigas. Primero se mira en el archivo de versiones viejas de Debian y, si no está
 # ahí (la versión vigente), en la carpeta «current».
@@ -10,7 +10,7 @@ set -euo pipefail
 
 VERSION="${1:-}"
 DESTINO="${2:-fuentes-debian-$VERSION}"
-[[ "$VERSION" =~ ^12\.[0-9]+\.[0-9]+$ ]] || { echo "Uso: $0 12.X.0 [carpeta]"; exit 1; }
+[[ "$VERSION" =~ ^1[2-9]\.[0-9]+\.[0-9]+$ ]] || { echo "Uso: $0 13.X.0 [carpeta]"; exit 1; }
 
 mkdir -p "$DESTINO"
 for base in "https://cdimage.debian.org/cdimage/archive/$VERSION/source/iso-dvd" \
