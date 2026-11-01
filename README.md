@@ -18,6 +18,7 @@ Se mantiene al día solo: cada vez que cambia lo que repartimos con licencia lib
 | llama.cpp en el ordenador, para «Ofrecer la tarjeta gráfica de este PC a la IA del NAS» (la misma publicación `b11381`: CUDA 12.4 y Vulkan en Windows, Vulkan en Linux, Metal en Mac con chip de Apple) | No va dentro de LGM Connect: la aplicación lo baja la primera vez que se activa, de la publicación oficial y con su huella fijada, y lo lanza como programa aparte. En Windows con NVIDIA baja además las bibliotecas de CUDA que llama.cpp publica junto al motor (de NVIDIA, con su licencia de redistribución; no son libres ni las reparte LGM-OS) | MIT, sin modificar | <https://github.com/ggml-org/llama.cpp/releases/tag/b11381> |
 | Trivy 0.75.0 (el revisor de fallos de seguridad conocidos de las imágenes de las aplicaciones, edición Empresarial) | Lo baja el NAS al encender la revisión, de la publicación oficial y con su suma SHA-256 fijada; corre como programa aparte, sin root | Apache 2.0, sin modificar | <https://github.com/aquasecurity/trivy/releases/tag/v0.75.0> |
 | Versity Gateway 1.10.0 (`versitygw`, el servidor del almacenamiento S3 con versiones y bloqueo de objetos, edición Empresarial) | Lo baja el NAS al encender el almacenamiento S3, de la publicación oficial y con su suma SHA-256 fijada, y lo deja en `/opt/lgm-s3` con su `LICENSE` y su `NOTICE`; corre como programa aparte, sin root (`lgm-s3.service`) | Apache 2.0, sin modificar | <https://github.com/versity/versitygw/releases/tag/v1.10.0> |
+| Habilidades del catálogo de Comet AI (instrucciones en texto, sin código, adaptadas de habilidades de ClawHub) | Dentro del paquete de actualización, en `backend/app/core/datos/habilidades/`, legibles tal cual | MIT-0 cada una (el autor y la licencia, en su `ficha.json` y en el panel), **modificadas**: reescritas para el NAS y traducidas | El original de cada una y su autor, en [`habilidades-comet-ai.md`](habilidades-comet-ai.md); lo modificado es el propio texto que viaja en el paquete |
 | Modelos de la IA local: Qwen2.5 1.5B Instruct, Qwen3 4B y Qwen3 8B (GGUF Q4_K_M) y Qwen3 Embedding 0.6B (GGUF Q8_0) | Los baja el NAS de Hugging Face al elegirlos, en una revisión fija y con su huella | Apache 2.0, sin modificar | <https://huggingface.co/Qwen> (repositorios `Qwen2.5-1.5B-Instruct-GGUF`, `Qwen3-4B-GGUF`, `Qwen3-8B-GGUF`, `Qwen3-Embedding-0.6B-GGUF`) |
 
 Todo se usa **sin modificar**. A lo de Debian la ISO solo le añade archivos propios de LGM-OS
@@ -79,3 +80,7 @@ their source is the source DVD set of the Debian point release each ISO is based
 (<https://github.com/novnc/noVNC>). Source requests: the contact address at
 <https://lgm-os.com/aviso-legal>, free of charge, for at least three years after each ISO
 version was last distributed.
+
+The Comet AI skill catalogue (plain-text instructions, no code) is adapted from MIT-0 skills
+published on ClawHub, rewritten for the NAS tools and translated; each one's author, licence and
+origin are listed in [`habilidades-comet-ai.md`](habilidades-comet-ai.md) and shown in the panel.
