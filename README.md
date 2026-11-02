@@ -35,7 +35,8 @@ Docker para Debian: quien lo reparte es Docker, y su código está en <https://g
 La búsqueda inteligente de la Galería tampoco viaja en el paquete: el NAS que la activa baja sus
 bibliotecas de PyPI (ONNX Runtime, MIT; NumPy, BSD; FlatBuffers, Apache 2.0; Protocol Buffers,
 BSD; packaging, Apache 2.0 o BSD) y sus modelos de Hugging Face (CLIP ViT-B/32, MIT; el texto
-multilingüe de sentence-transformers, Apache 2.0; YuNet, MIT, y SFace, Apache 2.0, de OpenCV).
+multilingüe de sentence-transformers, Apache 2.0; YuNet, MIT, y SFace, Apache 2.0, de OpenCV; y
+YOLOX en int8, Apache 2.0, de OpenCV, que distingue personas y vehículos en los avisos de las cámaras).
 Ninguno es copyleft; la lista exacta, con la versión y la huella de cada archivo, está en
 `backend/requirements-ia.lock` y `backend/app/core/datos/ia_modelos.tsv` del producto.
 
