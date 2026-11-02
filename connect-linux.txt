@@ -1,0 +1,4 @@
+# Paquetes de Ubuntu 22.04 cuyas bibliotecas lleva dentro el AppImage de LGM Connect
+# (sin modificar), por paquete de fuentes. Código: https://launchpad.net/ubuntu/+source/<paquete>.
+# Lo escribe deploy/compilar-connect-linux.sh; se comitea al publicar.
+# Todavía sin rellenar: la lista sale al compilar el próximo AppImage.
