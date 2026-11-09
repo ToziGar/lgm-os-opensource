@@ -10,3 +10,4 @@ Debian que lleva una ISO es el de los DVD de fuentes de su versión base (`obten
 | 2026-10-17 | Debian GNU/Linux 12.15.0 "Bookworm" - Official amd64 NETINST with firmware 20260711-14:01 | `ddb805719b9d44ed93e7417f81e19460c21b1b18dcec079de1fe024147d5f69a` |
 | 2026-10-30 | Debian GNU/Linux 13.7.0 "Trixie" - Official amd64 NETINST with firmware 20260912-09:35 | `41752deffec8643099850e1c06e2d96390d87fa1a99535c53fdc778bbdb1c77f` |
 | 2026-11-04 | Debian GNU/Linux 13.7.0 "Trixie" - Official amd64 NETINST with firmware 20260912-09:35 | `1edf9a9d299995c0d62ea3d024cada2b47648fc64bafb6da14ba71f6ff21e7a2` |
+| 2026-11-09 | Debian GNU/Linux 13.7.0 "Trixie" - Official amd64 NETINST with firmware 20260912-09:35 | `1f024d45b263f309475c8b9e8013b4f9f7b6f8f76aed322cc365e7bfe4ec53fa` |
