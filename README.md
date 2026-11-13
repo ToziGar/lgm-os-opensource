@@ -46,6 +46,23 @@ YOLOX en int8, Apache 2.0, de OpenCV, que distingue personas y vehículos en los
 Ninguno es copyleft; la lista exacta, con la versión y la huella de cada archivo, está en
 `backend/requirements-ia.lock` y `backend/app/core/datos/ia_modelos.tsv` del producto.
 
+<!-- camaras-oyen-y-matriculas -->
+Con la misma IA activada, el NAS baja también los modelos de Cámaras, sin modificar y con su
+huella: YAMNet de Google (Apache 2.0; los sonidos que oye una cámara), en la conversión a ONNX de
+<https://huggingface.co/zeropointnine/yamnet-onnx> con los pesos intactos; LPD-YuNet de OpenCV Zoo
+(Apache 2.0; dónde hay una matrícula) y el lector de matrículas de fast-plate-ocr (MIT;
+<https://github.com/ankandrew/fast-plate-ocr>). La lista exacta está en
+`backend/app/core/datos/ia_modelos_camaras.tsv` del producto.
+
+<!-- icloud-fotos -->
+Las fotos de iCloud de la Galería hablan con Apple con pyicloud (MIT), que el NAS baja de PyPI
+con su huella como el resto de bibliotecas del servidor (`backend/requirements.lock`). Arrastra
+srp, keyring, keyrings.alt, jaraco.classes, jaraco.context, jaraco.functools, jeepney,
+more-itertools, zipp y backports.tarfile (MIT), importlib-metadata y lazy-importer (Apache 2.0),
+tinyhtml (MIT o Apache 2.0), protobuf y SecretStorage (BSD) y fido2 (BSD 2 y Apache 2.0), que lleva
+dentro, como dato y sin modificar, la lista de sufijos públicos de Mozilla (MPL 2.0; su fuente, en
+<https://publicsuffix.org/list/>). Ninguna es copyleft fuerte.
+
 <!-- ia-voz -->
 El dictado y la respuesta en voz de la IA local tampoco viajan en el paquete: el NAS que los
 activa baja de PyPI pywhispercpp 1.5.1 (MIT), que lleva dentro whisper.cpp y ggml (MIT), y de
@@ -59,6 +76,13 @@ LJ Speech (inglés, dominio público), MLS de alemán y de francés (Multilingua
 Pratap y otros, OpenSLR 94, CC BY 4.0) y serena (italiano, de committa, CC BY 4.0). Portugués y
 brasileño no tienen ninguna así y van sin voz. La lista exacta, con la versión y la huella de
 cada archivo, está en `backend/requirements-ia-voz.lock` y `backend/app/core/datos/ia_voz.tsv`.
+
+<!-- subtitulos-auto -->
+Los subtítulos automáticos de Películas usan esa misma biblioteca, sin modificar, y se bajan igual
+al pedirlos: el modelo small de Whisper (el mismo archivo que el dictado) o, en la calidad alta,
+large-v3-turbo, los dos convertidos por whisper.cpp desde
+<https://huggingface.co/ggerganov/whisper.cpp> (pesos de OpenAI, MIT). Con su huella en el mismo
+`ia_voz.tsv`. El sonido lo saca ffmpeg, que corre como programa aparte, por orden.
 
 ## Si alguien pide el código
 
